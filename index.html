@@ -5,7 +5,7 @@
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
 <title>GP DISTRIBUCIONES - APP TOTAL PREVENTISTA</title>
 <!-- PWA Manifest Inline Exhaustivo -->
-<link href="data:application/manifest+json;utf8,%7B%22name%22%3A%22GP%20Distribuciones%20-%20Preventa%22%2C%22short_name%22%3A%22GP%20Preventa%22%2C%22description%22%3A%22App%20Integral%20para%20Preventistas%20-%20GPS%2C%20Caja%20y%20Clientes%22%2C%22start_url%22%3A%22.%22%2C%22scope%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22orientation%22%3A%22portrait-primary%22%2C%22background_color%22%3A%22%230b1120%22%2C%22theme_color%22%3A%22%2316a34a%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%3Butf8%2C%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20192%20192'%3E%3Crect%20width%3D'192'%20height%3D'192'%20rx%3D'38'%20fill='%2316a34a'%2F%3E%3Cpath%20d%3D'M36%20108%20h20%20l12%2028%20h30%20l-16%20-28%20h48%20v-36%20h-94%20z'%20fill='%230f172a'%20opacity%3D'0.2'%2F%3E%3Ctext%20x%3D'96'%20y%3D'118'%20font-family%3D'system-ui%2C%20sans-serif'%20font-size%3D'76'%20text-anchor%3D'middle'%20fill='white'%20font-weight='900'%3EGP%3C%2Ftext%3E%3C%2Fsvg%3E%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%2C%22purpose%22%3A%22any%22%7D%2C%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%3Butf8%2C%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20512%20512'%3E%3Crect%20width%3D'512'%20height%3D'512'%20rx%3D'100'%20fill='%2316a34a'%2F%3E%3Ctext%20x%3D'256'%20y%3D'315'%20font-family%3D'system-ui%2C%20sans-serif'%20font-size%3D'200'%20text-anchor%3D'middle'%20fill='white'%20font-weight='900'%3EGP%3C%2Ftext%3E%3C%2Fsvg%3E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%2C%22purpose%22%3A%22any%22%7D%2C%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%3Butf8%2C%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20512%20512'%3E%3Crect%20width%3D'512'%20height%3D'512'%20fill='%2316a34a'%2F%3E%3Ctext%20x%3D'256'%20y%3D'315'%20font-family%3D'system-ui%2C%20sans-serif'%20font-size%3D'200'%20text-anchor%3D'middle'%20fill='white'%20font-weight='900'%3EGP%3C%2Ftext%3E%3C%2Fsvg%3E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%2C%22purpose%22%3A%22maskable%22%7D%5D%7D" rel="manifest"/>
+<link href="manifest.json" rel="manifest"/>
 <!-- iOS / Safari & PWA Meta Tags -->
 <meta content="#16a34a" name="theme-color"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
@@ -13,7 +13,8 @@
 <meta content="GP Preventa" name="apple-mobile-web-app-title"/>
 <meta content="GP Preventa" name="application-name"/>
 <meta content="telephone=no" name="format-detection"/>
-<link href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'&gt;&lt;rect width='192' height='192' rx='38' fill='%2316a34a'/&gt;&lt;text x='96' y='118' font-family='system-ui, sans-serif' font-size='76' text-anchor='middle' fill='white' font-weight='900'&gt;GP&lt;/text&gt;&lt;/svg&gt;" rel="apple-touch-icon"/>
+<link href="icons/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="icons/icon-192.png" rel="icon" type="image/png"/>
 <link href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'&gt;&lt;rect width='192' height='192' rx='38' fill='%2316a34a'/&gt;&lt;text x='96' y='118' font-family='system-ui, sans-serif' font-size='76' text-anchor='middle' fill='white' font-weight='900'&gt;GP&lt;/text&gt;&lt;/svg&gt;" rel="icon" type="image/svg+xml"/>
 <!-- Chart.js CDN -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -1129,72 +1130,14 @@
   }, { passive: false });
 
   /* ==========================================================================
-     2. PWA: SERVICE WORKER ROBUSTO OFFLINE (Blob URL)
+     2. PWA: SERVICE WORKER OFFLINE (archivo sw.js real)
      ========================================================================== */
   if ('serviceWorker' in navigator) {
-    const swCode = `
-      const CACHE_NAME = 'gp-preventa-v4';
-      const CORE_ASSETS = [
-        'https://cdn.jsdelivr.net/npm/chart.js'
-      ];
-
-      self.addEventListener('install', (event) => {
-        self.skipWaiting();
-        event.waitUntil(
-          caches.open(CACHE_NAME).then((cache) => {
-            return cache.addAll(CORE_ASSETS).catch(err => {
-              console.warn('Pre-cache asset warning:', err);
-            });
-          })
-        );
-      });
-
-      self.addEventListener('activate', (event) => {
-        event.waitUntil(
-          caches.keys().then((keys) => {
-            return Promise.all(
-              keys.map((key) => {
-                if (key !== CACHE_NAME) return caches.delete(key);
-              })
-            );
-          }).then(() => self.clients.claim())
-        );
-      });
-
-      self.addEventListener('fetch', (event) => {
-        // Para APIs externas como Overpass o WhatsApp, bypass cache directo
-        if (event.request.url.includes('overpass-api') || event.request.url.includes('wa.me')) {
-          return;
-        }
-
-        event.respondWith(
-          fetch(event.request)
-            .then((networkResponse) => {
-              if (networkResponse && networkResponse.status === 200) {
-                const responseToCache = networkResponse.clone();
-                caches.open(CACHE_NAME).then((cache) => {
-                  cache.put(event.request, responseToCache);
-                });
-              }
-              return networkResponse;
-            })
-            .catch(() => {
-              return caches.match(event.request).then((cachedResponse) => {
-                if (cachedResponse) return cachedResponse;
-                // Si es navegación a la app, fallback al cache
-                if (event.request.mode === 'navigate') {
-                  return caches.match('./') || caches.match('');
-                }
-              });
-            })
-        );
-      });
-    `;
-    const blob = new Blob([swCode], { type: 'application/javascript' });
-    const swUrl = URL.createObjectURL(blob);
-    navigator.serviceWorker.register(swUrl)
-      .then(reg => console.log('ServiceWorker GP Preventa activo', reg))
-      .catch(err => console.log('SW no registrado', err));
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log('ServiceWorker GP Preventa activo', reg))
+        .catch(err => console.log('SW no registrado', err));
+    });
   }
 
   /* ==========================================================================
