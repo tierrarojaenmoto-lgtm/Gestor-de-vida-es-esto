@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>GP DISTRIBUCIONES - APP TOTAL PREVENTISTA</title>
-  
-  <!-- PWA -->
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#16a34a">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="GP Distrib">
-  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  <!-- Chart.js CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-  <style>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<title>GP DISTRIBUCIONES - APP TOTAL PREVENTISTA</title>
+<!-- PWA Manifest Inline Exhaustivo -->
+<link href="data:application/manifest+json;utf8,%7B%22name%22%3A%22GP%20Distribuciones%20-%20Preventa%22%2C%22short_name%22%3A%22GP%20Preventa%22%2C%22description%22%3A%22App%20Integral%20para%20Preventistas%20-%20GPS%2C%20Caja%20y%20Clientes%22%2C%22start_url%22%3A%22.%22%2C%22scope%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22orientation%22%3A%22portrait-primary%22%2C%22background_color%22%3A%22%230b1120%22%2C%22theme_color%22%3A%22%2316a34a%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%3Butf8%2C%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20192%20192'%3E%3Crect%20width%3D'192'%20height%3D'192'%20rx%3D'38'%20fill='%2316a34a'%2F%3E%3Cpath%20d%3D'M36%20108%20h20%20l12%2028%20h30%20l-16%20-28%20h48%20v-36%20h-94%20z'%20fill='%230f172a'%20opacity%3D'0.2'%2F%3E%3Ctext%20x%3D'96'%20y%3D'118'%20font-family%3D'system-ui%2C%20sans-serif'%20font-size%3D'76'%20text-anchor%3D'middle'%20fill='white'%20font-weight='900'%3EGP%3C%2Ftext%3E%3C%2Fsvg%3E%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%2C%22purpose%22%3A%22any%22%7D%2C%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%3Butf8%2C%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20512%20512'%3E%3Crect%20width%3D'512'%20height%3D'512'%20rx%3D'100'%20fill='%2316a34a'%2F%3E%3Ctext%20x%3D'256'%20y%3D'315'%20font-family%3D'system-ui%2C%20sans-serif'%20font-size%3D'200'%20text-anchor%3D'middle'%20fill='white'%20font-weight='900'%3EGP%3C%2Ftext%3E%3C%2Fsvg%3E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%2C%22purpose%22%3A%22any%22%7D%2C%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%3Butf8%2C%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20512%20512'%3E%3Crect%20width%3D'512'%20height%3D'512'%20fill='%2316a34a'%2F%3E%3Ctext%20x%3D'256'%20y%3D'315'%20font-family%3D'system-ui%2C%20sans-serif'%20font-size%3D'200'%20text-anchor%3D'middle'%20fill='white'%20font-weight='900'%3EGP%3C%2Ftext%3E%3C%2Fsvg%3E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%2C%22purpose%22%3A%22maskable%22%7D%5D%7D" rel="manifest"/>
+<!-- iOS / Safari & PWA Meta Tags -->
+<meta content="#16a34a" name="theme-color"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="GP Preventa" name="apple-mobile-web-app-title"/>
+<meta content="GP Preventa" name="application-name"/>
+<meta content="telephone=no" name="format-detection"/>
+<link href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'&gt;&lt;rect width='192' height='192' rx='38' fill='%2316a34a'/&gt;&lt;text x='96' y='118' font-family='system-ui, sans-serif' font-size='76' text-anchor='middle' fill='white' font-weight='900'&gt;GP&lt;/text&gt;&lt;/svg&gt;" rel="apple-touch-icon"/>
+<link href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'&gt;&lt;rect width='192' height='192' rx='38' fill='%2316a34a'/&gt;&lt;text x='96' y='118' font-family='system-ui, sans-serif' font-size='76' text-anchor='middle' fill='white' font-weight='900'&gt;GP&lt;/text&gt;&lt;/svg&gt;" rel="icon" type="image/svg+xml"/>
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
     :root {
       --primary: #16a34a;
       --primary-dark: #15803d;
@@ -26,6 +25,7 @@
       --danger-dark: #b91c1c;
       --blue: #2563eb;
       --blue-dark: #1d4ed8;
+      --amber: #d97706;
       --bg: #0f172a;
       --card-bg: #1e293b;
       --card-border: #334155;
@@ -41,19 +41,21 @@
       -webkit-tap-highlight-color: transparent;
     }
 
-    /* Desactiva pull-to-refresh y el rebote de scroll */
+    /* 1. PREVENCIÓN RADICAL DE PULL-TO-REFRESH Y OVERSCROLL */
     html, body {
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      font-size: 15px;
       overscroll-behavior-y: none;
-      overscroll-behavior-x: none;
+      overscroll-behavior: none;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
     }
 
     body {
-      background-color: var(--bg);
-      color: var(--text);
       display: flex;
       justify-content: center;
-      min-height: 100vh;
-      font-size: 15px;
     }
 
     .app-container {
@@ -64,8 +66,10 @@
       display: flex;
       flex-direction: column;
       position: relative;
-      padding-bottom: 78px; /* espacio para bottom nav */
+      padding-bottom: 78px;
       box-shadow: 0 0 30px rgba(0,0,0,0.8);
+      overscroll-behavior-y: none;
+      overscroll-behavior: none;
     }
 
     /* TOP HEADER */
@@ -128,17 +132,72 @@
       background: #475569;
     }
 
+    /* BANNER PWA INSTALACIÓN */
+    .pwa-install-banner {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(90deg, #15803d 0%, #16a34a 100%);
+      color: #ffffff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      margin-top: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      animation: fadeIn 0.2s ease-in-out;
+    }
+
+    .pwa-install-banner.visible {
+      display: flex;
+    }
+
+    .btn-pwa-install {
+      background: #ffffff;
+      color: #15803d;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-weight: 800;
+      font-size: 0.75rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    }
+
+    .btn-pwa-install:active {
+      transform: scale(0.96);
+    }
+
+    .pwa-banner-close {
+      background: transparent;
+      border: none;
+      color: rgba(255,255,255,0.8);
+      font-size: 1.1rem;
+      cursor: pointer;
+      padding: 0 4px;
+      margin-left: 6px;
+      font-weight: bold;
+    }
+
     /* MAIN VIEW AREAS */
     main {
       flex: 1;
       padding: 14px;
       overflow-y: auto;
-      overscroll-behavior: contain;
+      overscroll-behavior-y: contain;
+      overscroll-behavior: none;
+      -webkit-overflow-scrolling: touch;
+      touch-action: pan-y;
     }
 
     .tab-content {
       display: none;
       animation: fadeIn 0.15s ease-in-out;
+      overscroll-behavior-y: contain;
+      overscroll-behavior: none;
     }
 
     .tab-content.active {
@@ -153,8 +212,8 @@
     /* GIGANTIC BUTTONS FOR STREET ACTION */
     .btn-giant {
       width: 100%;
-      padding: 16px 14px;
-      font-size: 1.05rem;
+      padding: 15px 14px;
+      font-size: 1.02rem;
       font-weight: 800;
       border-radius: 12px;
       border: none;
@@ -178,6 +237,7 @@
     .btn-giant-green { background: var(--primary); }
     .btn-giant-red { background: var(--danger); }
     .btn-giant-blue { background: var(--blue); }
+    .btn-giant-amber { background: var(--amber); }
 
     /* CARDS */
     .card {
@@ -213,6 +273,7 @@
       padding: 12px 10px;
       border-radius: 10px;
       text-align: center;
+      position: relative;
     }
 
     .metric-title {
@@ -265,14 +326,14 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 8px;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
     }
 
     .btn-action {
-      padding: 12px 8px;
+      padding: 11px 8px;
       border-radius: 10px;
       font-weight: 800;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       border: none;
       color: white;
       cursor: pointer;
@@ -284,6 +345,38 @@
 
     .btn-action:active { transform: scale(0.97); }
 
+    /* SMALL BUTTONS FOR EDIT/DELETE */
+    .btn-sm {
+      padding: 5px 9px;
+      border-radius: 6px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      transition: all 0.1s;
+    }
+    .btn-sm-edit {
+      background: #3b82f6;
+      color: #fff;
+    }
+    .btn-sm-edit:hover { background: #2563eb; }
+    .btn-sm-delete {
+      background: #ef4444;
+      color: #fff;
+    }
+    .btn-sm-delete:hover { background: #dc2626; }
+    .btn-sm-adjust {
+      background: #475569;
+      color: #e2e8f0;
+      border: 1px solid #64748b;
+      margin-top: 5px;
+      padding: 4px 8px;
+      font-size: 0.68rem;
+    }
+
     /* BADGES & FILTERS */
     .filter-pills {
       display: flex;
@@ -292,6 +385,7 @@
       padding-bottom: 8px;
       margin-bottom: 10px;
       scrollbar-width: none;
+      overscroll-behavior-x: contain;
     }
     .filter-pills::-webkit-scrollbar { display: none; }
 
@@ -337,6 +431,7 @@
       border-top: 2px solid #1e293b;
       display: flex;
       z-index: 50;
+      touch-action: none;
     }
 
     .nav-item {
@@ -377,6 +472,7 @@
       display: none;
       align-items: flex-end;
       justify-content: center;
+      overscroll-behavior: none;
     }
 
     .modal-overlay.active {
@@ -391,9 +487,11 @@
       padding: 20px 16px 28px 16px;
       box-shadow: 0 -10px 30px rgba(0,0,0,0.6);
       border-top: 1px solid #475569;
-      max-height: 90vh;
+      max-height: 92vh;
       overflow-y: auto;
-      overscroll-behavior: contain;
+      overscroll-behavior-y: contain;
+      overscroll-behavior: none;
+      -webkit-overflow-scrolling: touch;
       animation: slideUp 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
@@ -461,10 +559,22 @@
       align-items: center;
       padding: 10px 0;
       border-bottom: 1px solid #334155;
+      gap: 8px;
     }
 
     .history-item:last-child {
       border-bottom: none;
+    }
+
+    .history-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .history-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
 
     /* TOAST ALERT */
@@ -502,387 +612,633 @@
   </style>
 </head>
 <body>
-
 <div class="app-container">
-  
-  <!-- TOAST -->
-  <div id="toast" class="toast"></div>
-
-  <!-- HEADER -->
-  <header>
-    <div class="header-top">
-      <div class="brand-title">
-        <span>🚚 GP DISTRIBUCIONES</span>
-        <span class="brand-badge">PREVENTA</span>
-      </div>
-      <div class="backup-bar">
-        <button class="btn-backup" onclick="exportBackup()">📥 Backup</button>
-        <button class="btn-backup" onclick="document.getElementById('importFile').click()">📤 Cargar</button>
-        <input type="file" id="importFile" accept=".json" style="display:none" onchange="importBackup(event)">
-      </div>
-    </div>
-  </header>
-
-  <!-- MAIN TAB CONTENT -->
-  <main>
-    
-    <!-- ==================== MÓDULO 1: MAPA GPS ==================== -->
-    <section id="tab-mapa" class="tab-content active">
-      <button class="btn-giant btn-giant-green" id="btn-gps" onclick="iniciarGPS()">
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+<!-- HEADER -->
+<header>
+<div class="header-top">
+<div class="brand-title">
+<span>🚚 GP DISTRIBUCIONES</span>
+<span class="brand-badge">PREVENTA</span>
+</div>
+<div class="backup-bar">
+<button class="btn-backup" onclick="exportBackup()">📥 Backup</button>
+<button class="btn-backup" onclick="document.getElementById('importFile').click()">📤 Cargar</button>
+<input accept=".json" id="importFile" onchange="importBackup(event)" style="display:none" type="file"/>
+</div>
+</div>
+<!-- BANNER SUTIL PWA INSTALACIÓN -->
+<div class="pwa-install-banner" id="pwa-install-banner">
+<div style="display:flex; align-items:center; gap:6px;">
+<span>📲</span>
+<span>Instalar GP Preventa en el inicio</span>
+</div>
+<div style="display:flex; align-items:center;">
+<button class="btn-pwa-install" id="btn-pwa-install" onclick="instalarPWA()">INSTALAR</button>
+<button class="pwa-banner-close" onclick="cerrarBannerPWA()" title="Cerrar">×</button>
+</div>
+</div>
+</header>
+<!-- MAIN TAB CONTENT -->
+<main id="main-scroll">
+<!-- ==================== MÓDULO 1: MAPA GPS ==================== -->
+<section class="tab-content active" id="tab-mapa">
+<button class="btn-giant btn-giant-green" id="btn-gps" onclick="iniciarGPS()">
         📍 HABILITAR GPS Y BUSCAR NEGOCIOS CERCA
       </button>
-
-      <div id="gps-status" style="margin: 12px 0; font-size: 0.85rem; color: #94a3b8; font-weight: 600; text-align: center;">
+<div id="gps-status" style="margin: 12px 0; font-size: 0.85rem; color: #94a3b8; font-weight: 600; text-align: center;">
         Presioná el botón para buscar negocios a 1500m con Overpass API.
       </div>
-
-      <!-- Stats -->
-      <div class="grid-2x2" id="stats-mapa" style="margin-bottom: 10px;">
-        <div class="metric-card">
-          <div class="metric-title">Encontrados</div>
-          <div class="metric-value" id="stat-encontrados">0</div>
+<!-- Stats -->
+<div class="grid-2x2" id="stats-mapa" style="margin-bottom: 10px;">
+<div class="metric-card">
+<div class="metric-title">Encontrados</div>
+<div class="metric-value" id="stat-encontrados">0</div>
+</div>
+<div class="metric-card">
+<div class="metric-title">Visitados Hoy</div>
+<div class="metric-value val-success" id="stat-visitados">0</div>
+</div>
+<div class="metric-card" style="grid-column: span 2;">
+<div class="metric-title">Restan Visitar</div>
+<div class="metric-value" id="stat-restan">0</div>
+</div>
+</div>
+<!-- Filtros -->
+<div class="filter-pills">
+<div class="pill active" onclick="filtrarMapa('todos', this)">Todos</div>
+<div class="pill" onclick="filtrarMapa('pendientes', this)">Pendientes</div>
+<div class="pill" onclick="filtrarMapa('visitados', this)">Visitados</div>
+<div class="pill" onclick="filtrarMapa('kioscos', this)">Kioscos / Almacenes</div>
+<div class="pill" onclick="filtrarMapa('supers', this)">Supers / Autoservicios</div>
+</div>
+<!-- Contenedor de Tarjetas de Negocios -->
+<div id="lista-negocios">
+<div style="text-align: center; color: #64748b; padding: 30px 10px;">
+          🏪 No hay negocios cargados.<br/>Activá el GPS arriba para escanear tu zona.
         </div>
-        <div class="metric-card">
-          <div class="metric-title">Visitados Hoy</div>
-          <div class="metric-value val-success" id="stat-visitados">0</div>
-        </div>
-        <div class="metric-card" style="grid-column: span 2;">
-          <div class="metric-title">Restan Visitar</div>
-          <div class="metric-value" id="stat-restan">0</div>
-        </div>
-      </div>
-
-      <!-- Filtros -->
-      <div class="filter-pills">
-        <div class="pill active" onclick="filtrarMapa('todos', this)">Todos</div>
-        <div class="pill" onclick="filtrarMapa('pendientes', this)">Pendientes</div>
-        <div class="pill" onclick="filtrarMapa('visitados', this)">Visitados</div>
-        <div class="pill" onclick="filtrarMapa('kioscos', this)">Kioscos / Almacenes</div>
-        <div class="pill" onclick="filtrarMapa('supers', this)">Supers / Autoservicios</div>
-      </div>
-
-      <!-- Contenedor de Tarjetas de Negocios -->
-      <div id="lista-negocios">
-        <div style="text-align: center; color: #64748b; padding: 30px 10px;">
-          🏪 No hay negocios cargados.<br>Activá el GPS arriba para escanear tu zona.
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== MÓDULO 2: CAJA ==================== -->
-    <section id="tab-caja" class="tab-content">
-      <!-- 4 TARJETAS GRANDES -->
-      <div class="grid-2x2">
-        <div class="metric-card">
-          <div class="metric-title">💵 Efectivo</div>
-          <div class="metric-value val-success" id="caja-efectivo">$0</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-title">🏦 Transferencia</div>
-          <div class="metric-value" id="caja-transferencia" style="color: #60a5fa;">$0</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-title">📋 Me Deben</div>
-          <div class="metric-value" id="caja-medeben" style="color: #facc15;">$0</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-title">💸 Yo Debo</div>
-          <div class="metric-value val-danger" id="caja-yodebo">$0</div>
-        </div>
-      </div>
-
-      <!-- 2 TOTALES -->
-      <div class="totals-box">
-        <div class="total-row">
-          <span class="total-label">DISPONIBLE EN MANO:</span>
-          <span class="total-number" id="caja-disponible" style="color: #4ade80;">$0</span>
-        </div>
-        <div class="total-row" style="border-top: 1px dashed #334155; padding-top: 6px;">
-          <span class="total-label">TOTAL REAL NETO:</span>
-          <span class="total-number" id="caja-real-neto" style="color: #38bdf8;">$0</span>
-        </div>
-      </div>
-
-      <!-- BOTONES DE ACCIÓN -->
-      <div class="actions-grid">
-        <button class="btn-action btn-giant-green" onclick="abrirModalIngreso()">➕ INGRESO</button>
-        <button class="btn-action btn-giant-red" onclick="abrirModalGasto()">➖ GASTO</button>
-      </div>
-
-      <button class="btn-giant btn-giant-red" style="margin-bottom: 14px; font-size: 0.9rem;" onclick="abrirModalMiDeuda()">
-        💸 YO DEBO - AGREGAR MI DEUDA
-      </button>
-
-      <!-- MIS DEUDAS -->
-      <div class="card" style="padding: 12px;">
-        <h3 style="font-size: 0.95rem; font-weight: 800; margin-bottom: 10px; color: #f87171;">
-          MIS DEUDAS PENDIENTES
-        </h3>
-        <div id="lista-mis-deudas">
-          <div style="font-size: 0.8rem; color: #64748b; text-align: center;">Sin deudas registradas. ¡Excelente!</div>
-        </div>
-      </div>
-
-      <!-- GRÁFICOS CHART.JS -->
-      <div class="card">
-        <h4 style="font-size: 0.85rem; font-weight: 700; color: #94a3b8; margin-bottom: 8px;">COMPOSICIÓN DE FONDOS</h4>
-        <div style="height: 220px; position: relative;">
-          <canvas id="chartDoughnut"></canvas>
-        </div>
-      </div>
-
-      <div class="card">
-        <h4 style="font-size: 0.85rem; font-weight: 700; color: #94a3b8; margin-bottom: 8px;">ÚLTIMOS 7 DÍAS</h4>
-        <div style="height: 220px; position: relative;">
-          <canvas id="chartBar"></canvas>
-        </div>
-      </div>
-
-      <!-- HISTORIAL COMPLETO -->
-      <div class="card">
-        <h4 style="font-size: 0.9rem; font-weight: 800; color: #cbd5e1; margin-bottom: 10px;">HISTORIAL DE MOVIMIENTOS</h4>
-        <div id="lista-historial">
-          <div style="font-size: 0.8rem; color: #64748b; text-align: center;">No hay movimientos recientes.</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== MÓDULO 3: CLIENTES ==================== -->
-    <section id="tab-clientes" class="tab-content">
-      <button class="btn-giant btn-giant-green" style="margin-bottom: 14px;" onclick="abrirModalCliente()">
+</div>
+</section>
+<!-- ==================== MÓDULO 2: CAJA ==================== -->
+<section class="tab-content" id="tab-caja">
+<!-- 4 TARJETAS GRANDES CON AJUSTE RÁPIDO DE CAJA -->
+<div class="grid-2x2">
+<div class="metric-card">
+<div class="metric-title">💵 Efectivo</div>
+<div class="metric-value val-success" id="caja-efectivo">$0</div>
+<button class="btn-sm btn-sm-adjust" onclick="abrirModalAjustarSaldos('efectivo')">✏️ Ajustar</button>
+</div>
+<div class="metric-card">
+<div class="metric-title">🏦 Transferencia</div>
+<div class="metric-value" id="caja-transferencia" style="color: #60a5fa;">$0</div>
+<button class="btn-sm btn-sm-adjust" onclick="abrirModalAjustarSaldos('transferencia')">✏️ Ajustar</button>
+</div>
+<div class="metric-card">
+<div class="metric-title">📋 Me Deben</div>
+<div class="metric-value" id="caja-medeben" style="color: #facc15;">$0</div>
+</div>
+<div class="metric-card">
+<div class="metric-title">💸 Yo Debo</div>
+<div class="metric-value val-danger" id="caja-yodebo">$0</div>
+</div>
+</div>
+<!-- 2 TOTALES -->
+<div class="totals-box">
+<div class="total-row">
+<span class="total-label">DISPONIBLE EN MANO:</span>
+<span class="total-number" id="caja-disponible" style="color: #4ade80;">$0</span>
+</div>
+<div class="total-row" style="border-top: 1px dashed #334155; padding-top: 6px;">
+<span class="total-label">TOTAL REAL NETO:</span>
+<span class="total-number" id="caja-real-neto" style="color: #38bdf8;">$0</span>
+</div>
+</div>
+<!-- BOTONES DE ACCIÓN -->
+<div class="actions-grid">
+<button class="btn-action btn-giant-green" onclick="abrirModalIngreso()">➕ INGRESO</button>
+<button class="btn-action btn-giant-red" onclick="abrirModalGasto()">➖ GASTO</button>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px;">
+<button class="btn-giant btn-giant-red" onclick="abrirModalMiDeuda()" style="font-size: 0.85rem; padding: 12px 6px;">
+          💸 YO DEBO (+DEUDA)
+        </button>
+<button class="btn-giant btn-giant-amber" onclick="abrirModalAjustarSaldos()" style="font-size: 0.85rem; padding: 12px 6px;">
+          ⚙️ AJUSTAR SALDOS
+        </button>
+</div>
+<!-- MIS DEUDAS -->
+<div class="card" style="padding: 12px;">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 10px;">
+<h3 style="font-size: 0.95rem; font-weight: 800; color: #f87171;">
+            MIS DEUDAS PENDIENTES
+          </h3>
+<span id="cant-mis-deudas" style="font-size:0.75rem; color:#94a3b8; font-weight:700;"></span>
+</div>
+<div id="lista-mis-deudas">
+<div style="font-size: 0.8rem; color: #64748b; text-align: center;">Sin deudas registradas. ¡Excelente!</div>
+</div>
+</div>
+<!-- GRÁFICOS CHART.JS -->
+<div class="card">
+<h4 style="font-size: 0.85rem; font-weight: 700; color: #94a3b8; margin-bottom: 8px;">COMPOSICIÓN DE FONDOS</h4>
+<div style="height: 220px; position: relative;">
+<canvas id="chartDoughnut"></canvas>
+</div>
+</div>
+<div class="card">
+<h4 style="font-size: 0.85rem; font-weight: 700; color: #94a3b8; margin-bottom: 8px;">ÚLTIMOS 7 DÍAS</h4>
+<div style="height: 220px; position: relative;">
+<canvas id="chartBar"></canvas>
+</div>
+</div>
+<!-- HISTORIAL COMPLETO CON EDICIÓN Y ELIMINACIÓN -->
+<div class="card">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 10px;">
+<h4 style="font-size: 0.9rem; font-weight: 800; color: #cbd5e1;">HISTORIAL DE MOVIMIENTOS</h4>
+<span style="font-size:0.7rem; color:#64748b;">(Editar / Borrar)</span>
+</div>
+<div id="lista-historial">
+<div style="font-size: 0.8rem; color: #64748b; text-align: center;">No hay movimientos recientes.</div>
+</div>
+</div>
+</section>
+<!-- ==================== MÓDULO 3: CLIENTES ==================== -->
+<section class="tab-content" id="tab-clientes">
+<button class="btn-giant btn-giant-green" onclick="abrirModalCliente()" style="margin-bottom: 14px;">
         👥 AGREGAR CLIENTE DEUDOR
       </button>
-
-      <div class="card" style="padding: 12px; margin-bottom: 14px;">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-          <span style="font-size: 0.85rem; color: #94a3b8; font-weight: 700;">TOTAL A COBRAR EN LA CALLE:</span>
-          <span id="clientes-total-deuda" style="font-size: 1.2rem; font-weight: 900; color: #facc15;">$0</span>
-        </div>
-      </div>
-
-      <div id="lista-clientes">
-        <div style="text-align: center; color: #64748b; padding: 25px;">
+<div class="card" style="padding: 12px; margin-bottom: 14px;">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<span style="font-size: 0.85rem; color: #94a3b8; font-weight: 700;">TOTAL A COBRAR EN LA CALLE:</span>
+<span id="clientes-total-deuda" style="font-size: 1.2rem; font-weight: 900; color: #facc15;">$0</span>
+</div>
+</div>
+<div id="lista-clientes">
+<div style="text-align: center; color: #64748b; padding: 25px;">
           No hay clientes deudores en la lista.
         </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- BOTTOM BAR NAVIGATION -->
-  <nav class="bottom-nav">
-    <button class="nav-item active" onclick="cambiarTab('mapa', this)">
-      <span class="nav-icon">🗺️</span>
-      <span>MAPA</span>
-    </button>
-    <button class="nav-item" onclick="cambiarTab('caja', this)">
-      <span class="nav-icon">💰</span>
-      <span>CAJA</span>
-    </button>
-    <button class="nav-item" onclick="cambiarTab('clientes', this)">
-      <span class="nav-icon">👥</span>
-      <span>CLIENTES</span>
-    </button>
-  </nav>
-
-  <!-- MODAL: INGRESO -->
-  <div id="modal-ingreso" class="modal-overlay">
-    <div class="modal-sheet">
-      <div class="modal-header">
-        <div class="modal-title">➕ Registrar Ingreso</div>
-        <button class="modal-close" onclick="cerrarModal('modal-ingreso')">&times;</button>
-      </div>
-      <form onsubmit="guardarIngreso(event)">
-        <div class="form-group">
-          <label class="form-label">Monto ($)</label>
-          <input type="number" id="ing-monto" class="form-input" required min="1" step="any" placeholder="Ej: 50000">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Destino de Caja</label>
-          <select id="ing-origen" class="form-select" required>
-            <option value="efectivo">💵 Efectivo</option>
-            <option value="transferencia">🏦 Transferencia</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Descripción / Motivo</label>
-          <input type="text" id="ing-desc" class="form-input" required placeholder="Ej: Venta mercadería o cobro">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Fecha</label>
-          <input type="date" id="ing-fecha" class="form-input" required>
-        </div>
-        <button type="submit" class="btn-giant btn-giant-green" style="margin-top: 14px;">SUMAR A CAJA</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- MODAL: GASTO -->
-  <div id="modal-gasto" class="modal-overlay">
-    <div class="modal-sheet">
-      <div class="modal-header">
-        <div class="modal-title">➖ Registrar Gasto</div>
-        <button class="modal-close" onclick="cerrarModal('modal-gasto')">&times;</button>
-      </div>
-      <form onsubmit="guardarGasto(event)">
-        <div class="form-group">
-          <label class="form-label">Monto ($)</label>
-          <input type="number" id="gasto-monto" class="form-input" required min="1" step="any" placeholder="Ej: 15000">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Descontar OBLIGATORIAMENTE de:</label>
-          <select id="gasto-origen" class="form-select" required>
-            <option value="efectivo">💵 Efectivo</option>
-            <option value="transferencia">🏦 Transferencia</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Descripción</label>
-          <input type="text" id="gasto-desc" class="form-input" required placeholder="Ej: Combustible, Almuerzo">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Fecha</label>
-          <input type="date" id="gasto-fecha" class="form-input" required>
-        </div>
-        <button type="submit" class="btn-giant btn-giant-red" style="margin-top: 14px;">REGISTRAR GASTO</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- MODAL: AGREGAR MI DEUDA (YO DEBO) -->
-  <div id="modal-mi-deuda" class="modal-overlay">
-    <div class="modal-sheet">
-      <div class="modal-header">
-        <div class="modal-title">💸 Agregar Deuda Propia (Yo Debo)</div>
-        <button class="modal-close" onclick="cerrarModal('modal-mi-deuda')">&times;</button>
-      </div>
-      <form onsubmit="guardarMiDeuda(event)">
-        <div class="form-group">
-          <label class="form-label">¿A quién le debo?</label>
-          <input type="text" id="deuda-nombre" class="form-input" required placeholder="Ej: Farmacia Central / Proveedor X">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Monto Total ($)</label>
-          <input type="number" id="deuda-monto" class="form-input" required min="1" step="any" placeholder="Ej: 300000">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Descripción</label>
-          <input type="text" id="deuda-desc" class="form-input" placeholder="Ej: Pedido de mercadería lote 44">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Fecha</label>
-          <input type="date" id="deuda-fecha" class="form-input" required>
-        </div>
-        <button type="submit" class="btn-giant btn-giant-red" style="margin-top: 14px;">GUARDAR MI DEUDA</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- MODAL: PAGAR CUOTA MI DEUDA -->
-  <div id="modal-pagar-mi-deuda" class="modal-overlay">
-    <div class="modal-sheet">
-      <div class="modal-header">
-        <div class="modal-title" id="cuota-titulo">Pagar Cuota</div>
-        <button class="modal-close" onclick="cerrarModal('modal-pagar-mi-deuda')">&times;</button>
-      </div>
-      <form onsubmit="confirmarPagoCuota(event)">
-        <input type="hidden" id="cuota-deuda-id">
-        <div class="form-group">
-          <label class="form-label">Monto a Pagar ($)</label>
-          <input type="number" id="cuota-monto" class="form-input" required min="1" step="any">
-        </div>
-        <div class="form-group">
-          <label class="form-label">DE DÓNDE SALE (Caja):</label>
-          <select id="cuota-origen" class="form-select" required>
-            <option value="efectivo">💵 Efectivo</option>
-            <option value="transferencia">🏦 Transferencia</option>
-          </select>
-        </div>
-        <button type="submit" class="btn-giant btn-giant-green" style="margin-top: 14px;">CONFIRMAR PAGO</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- MODAL: AGREGAR CLIENTE DEUDOR -->
-  <div id="modal-cliente" class="modal-overlay">
-    <div class="modal-sheet">
-      <div class="modal-header">
-        <div class="modal-title">👥 Nuevo Cliente Deudor</div>
-        <button class="modal-close" onclick="cerrarModal('modal-cliente')">&times;</button>
-      </div>
-      <form onsubmit="guardarCliente(event)">
-        <div class="form-group">
-          <label class="form-label">Nombre del Cliente / Negocio</label>
-          <input type="text" id="cli-nombre" class="form-input" required placeholder="Ej: Almacén Don Juan">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Monto de la Deuda ($)</label>
-          <input type="number" id="cli-monto" class="form-input" required min="1" step="any" placeholder="Ej: 50000">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Teléfono WhatsApp (Opcional - con cód área)</label>
-          <input type="tel" id="cli-tel" class="form-input" placeholder="Ej: 5491122334455">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Fecha</label>
-          <input type="date" id="cli-fecha" class="form-input" required>
-        </div>
-        <button type="submit" class="btn-giant btn-giant-green" style="margin-top: 14px;">GUARDAR CLIENTE</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- MODAL: COBRAR A CLIENTE (PARCIAL) -->
-  <div id="modal-cobro-cliente" class="modal-overlay">
-    <div class="modal-sheet">
-      <div class="modal-header">
-        <div class="modal-title" id="cobro-cli-titulo">Cobrar a Cliente</div>
-        <button class="modal-close" onclick="cerrarModal('modal-cobro-cliente')">&times;</button>
-      </div>
-      <form onsubmit="confirmarCobroCliente(event)">
-        <input type="hidden" id="cobro-cli-id">
-        <div class="form-group">
-          <label class="form-label">¿Cuánto Pagó? ($)</label>
-          <input type="number" id="cobro-cli-monto" class="form-input" required min="1" step="any">
-        </div>
-        <div class="form-group">
-          <label class="form-label">A DÓNDE VA (Caja):</label>
-          <select id="cobro-cli-destino" class="form-select" required>
-            <option value="efectivo">💵 Efectivo</option>
-            <option value="transferencia">🏦 Transferencia</option>
-          </select>
-        </div>
-        <button type="submit" class="btn-giant btn-giant-green" style="margin-top: 14px;">REGISTRAR COBRO</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- MODAL: COMPROBANTE WHATSAPP -->
-  <div id="modal-comprobante" class="modal-overlay">
-    <div class="modal-sheet">
-      <div class="modal-header">
-        <div class="modal-title">🧾 Comprobante de Cobro</div>
-        <button class="modal-close" onclick="cerrarModal('modal-comprobante')">&times;</button>
-      </div>
-      <div id="receipt-box" class="receipt-preview"></div>
-      <button id="btn-send-whatsapp" class="btn-giant btn-giant-green" style="background: #25d366; color: #000; font-weight: 900;">
+</div>
+</section>
+</main>
+<!-- BOTTOM BAR NAVIGATION -->
+<nav class="bottom-nav">
+<button class="nav-item active" onclick="cambiarTab('mapa', this)">
+<span class="nav-icon">🗺️</span>
+<span>MAPA</span>
+</button>
+<button class="nav-item" onclick="cambiarTab('caja', this)">
+<span class="nav-icon">💰</span>
+<span>CAJA</span>
+</button>
+<button class="nav-item" onclick="cambiarTab('clientes', this)">
+<span class="nav-icon">👥</span>
+<span>CLIENTES</span>
+</button>
+</nav>
+<!-- MODAL: AJUSTAR SALDOS BASE DIRECTAMENTE -->
+<div class="modal-overlay" id="modal-ajustar-saldos">
+<div class="modal-sheet">
+<div class="modal-header">
+<div class="modal-title">⚙️ Ajustar Saldos de Caja</div>
+<button class="modal-close" onclick="cerrarModal('modal-ajustar-saldos')">×</button>
+</div>
+<form onsubmit="guardarAjusteSaldos(event)">
+<div class="form-group">
+<label class="form-label">💵 Saldo Efectivo ($)</label>
+<input class="form-input" id="ajuste-efectivo" required="" step="any" type="number"/>
+</div>
+<div class="form-group">
+<label class="form-label">🏦 Saldo Transferencia ($)</label>
+<input class="form-input" id="ajuste-transferencia" required="" step="any" type="number"/>
+</div>
+<p style="font-size:0.75rem; color:#94a3b8; margin-bottom:12px;">
+          💡 Este ajuste actualiza directamente el dinero real en caja para corregir diferencias.
+        </p>
+<button class="btn-giant btn-giant-green" type="submit">ACTUALIZAR SALDOS</button>
+</form>
+</div>
+</div>
+<!-- MODAL: INGRESO -->
+<div class="modal-overlay" id="modal-ingreso">
+<div class="modal-sheet">
+<div class="modal-header">
+<div class="modal-title">➕ Registrar Ingreso</div>
+<button class="modal-close" onclick="cerrarModal('modal-ingreso')">×</button>
+</div>
+<form onsubmit="guardarIngreso(event)">
+<div class="form-group">
+<label class="form-label">Monto ($)</label>
+<input class="form-input" id="ing-monto" min="1" placeholder="Ej: 50000" required="" step="any" type="number"/>
+</div>
+<div class="form-group">
+<label class="form-label">Destino de Caja</label>
+<select class="form-select" id="ing-origen" required="">
+<option value="efectivo">💵 Efectivo</option>
+<option value="transferencia">🏦 Transferencia</option>
+</select>
+</div>
+<div class="form-group">
+<label class="form-label">Descripción / Motivo</label>
+<input class="form-input" id="ing-desc" placeholder="Ej: Venta mercadería o cobro" required="" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label">Fecha</label>
+<input class="form-input" id="ing-fecha" required="" type="date"/>
+</div>
+<button class="btn-giant btn-giant-green" style="margin-top: 14px;" type="submit">SUMAR A CAJA</button>
+</form>
+</div>
+</div>
+<!-- MODAL: GASTO -->
+<div class="modal-overlay" id="modal-gasto">
+<div class="modal-sheet">
+<div class="modal-header">
+<div class="modal-title">➖ Registrar Gasto</div>
+<button class="modal-close" onclick="cerrarModal('modal-gasto')">×</button>
+</div>
+<form onsubmit="guardarGasto(event)">
+<div class="form-group">
+<label class="form-label">Monto ($)</label>
+<input class="form-input" id="gasto-monto" min="1" placeholder="Ej: 15000" required="" step="any" type="number"/>
+</div>
+<div class="form-group">
+<label class="form-label">Descontar OBLIGATORIAMENTE de:</label>
+<select class="form-select" id="gasto-origen" required="">
+<option value="efectivo">💵 Efectivo</option>
+<option value="transferencia">🏦 Transferencia</option>
+</select>
+</div>
+<div class="form-group">
+<label class="form-label">Descripción</label>
+<input class="form-input" id="gasto-desc" placeholder="Ej: Combustible, Almuerzo" required="" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label">Fecha</label>
+<input class="form-input" id="gasto-fecha" required="" type="date"/>
+</div>
+<button class="btn-giant btn-giant-red" style="margin-top: 14px;" type="submit">REGISTRAR GASTO</button>
+</form>
+</div>
+</div>
+<!-- MODAL: AGREGAR MI DEUDA (YO DEBO) -->
+<div class="modal-overlay" id="modal-mi-deuda">
+<div class="modal-sheet">
+<div class="modal-header">
+<div class="modal-title">💸 Agregar Deuda Propia (Yo Debo)</div>
+<button class="modal-close" onclick="cerrarModal('modal-mi-deuda')">×</button>
+</div>
+<form onsubmit="guardarMiDeuda(event)">
+<div class="form-group">
+<label class="form-label">¿A quién le debo?</label>
+<input class="form-input" id="deuda-nombre" placeholder="Ej: Farmacia Central / Proveedor X" required="" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label">Monto Total ($)</label>
+<input class="form-input" id="deuda-monto" min="1" placeholder="Ej: 300000" required="" step="any" type="number"/>
+</div>
+<div class="form-group">
+<label class="form-label">Descripción</label>
+<input class="form-input" id="deuda-desc" placeholder="Ej: Pedido de mercadería lote 44" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label">Fecha</label>
+<input class="form-input" id="deuda-fecha" required="" type="date"/>
+</div>
+<button class="btn-giant btn-giant-red" style="margin-top: 14px;" type="submit">GUARDAR MI DEUDA</button>
+</form>
+</div>
+</div>
+<!-- MODAL: EDITAR MI DEUDA (YO DEBO) -->
+<div class="modal-overlay" id="modal-editar-mi-deuda">
+<div class="modal-sheet">
+<div class="modal-header">
+<div class="modal-title">✏️ Editar Mi Deuda</div>
+<button class="modal-close" onclick="cerrarModal('modal-editar-mi-deuda')">×</button>
+</div>
+<form onsubmit="guardarEdicionMiDeuda(event)">
+<input id="edit-deuda-id" type="hidden"/>
+<div class="form-group">
+<label class="form-label">¿A quién le debo?</label>
+<input class="form-input" id="edit-deuda-nombre" required="" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label">Monto Original ($)</label>
+<input class="form-input" id="edit-deuda-monto-orig" min="0" required="" step="any" type="number"/>
+</div>
+<div class="form-group">
+<label class="form-label">Monto Actual Restante ($)</label>
+<input class="form-input" id="edit-deuda-monto-act" min="0" required="" step="any" type="number"/>
+</div>
+<div class="form-group">
+<label class="form-label">Descripción</label>
+<input class="form-input" id="edit-deuda-desc" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label">Fecha</label>
+<input class="form-input" id="edit-deuda-fecha" required="" type="date"/>
+</div>
+<button class="btn-giant btn-giant-blue" style="margin-top: 14px;" type="submit">GUARDAR CAMBIOS</button>
+</form>
+</div>
+</div>
+<!-- MODAL: PAGAR CUOTA MI DEUDA -->
+<div class="modal-overlay" id="modal-pagar-mi-deuda">
+<div class="modal-sheet">
+<div class="modal-header">
+<div class="modal-title" id="cuota-titulo">Pagar Cuota</div>
+<button class="modal-close" onclick="cerrarModal('modal-pagar-mi-deuda')">×</button>
+</div>
+<form onsubmit="confirmarPagoCuota(event)">
+<input id="cuota-deuda-id" type="hidden"/>
+<div class="form-group">
+<label class="form-label">Monto a Pagar ($)</label>
+<input class="form-input" id="cuota-monto" min="1" required="" step="any" type="number"/>
+</div>
+<div class="form-group">
+<label class="form-label">DE DÓNDE SALE (Caja):</label>
+<select class="form-select" id="cuota-origen" required="">
+<option value="efectivo">💵 Efectivo</option>
+<option value="transferencia">🏦 Transferencia</option>
+</select>
+</div>
+<button class="btn-giant btn-giant-green" style="margin-top: 14px;" type="submit">CONFIRMAR PAGO</button>
+</form>
+</div>
+</div>
+<!-- MODAL: EDITAR MOVIMIENTO DE HISTORIAL -->
+<div class="modal-overlay" id="modal-editar-movimiento">
+<div class="modal-sheet">
+<div class="modal-header">
+<div class="modal-title">✏️ Editar Movimiento</div>
+<button class="modal-close" onclick="cerrarModal('modal-editar-movimiento')">×</button>
+</div>
+<form onsubmit="guardarEdicionMovimiento(event)">
+<input id="edit-mov-id" type="hidden"/>
+<div class="form-group">
+<label class="form-label">Tipo</label>
+<input class="form-input" id="edit-mov-tipo" readonly="" style="opacity:0.75; text-transform:uppercase;" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label">Descripción</label>
+<input class="form-input" id="edit-mov-desc" required="" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label">Monto ($)</label>
+<input class="form-input" id="edit-mov-monto" min="0.01" required="" step="any" type="number"/>
+</div>
+<div class="form-group">
+<label class="form-label">Caja (Origen / Destino)</label>
+<select class="form-select" id="edit-mov-origen" required="">
+<option value="efectivo">💵 Efectivo</option>
+<option value="transferencia">🏦 Transferencia</option>
+</select>
+</div>
+<p style="font-size:0.75rem; color:#94a3b8; margin-bottom:12px;">
+          ⚠️ El saldo de caja se recalculará automáticamente revirtiendo el valor anterior y aplicando el nuevo.
+        </p>
+<button class="btn-giant btn-giant-blue" type="submit">ACTUALIZAR MOVIMIENTO</button>
+</form>
+</div>
+</div>
+<!-- MODAL: AGREGAR CLIENTE DEUDOR -->
+<div class="modal-overlay" id="modal-cliente">
+<div class="modal-sheet">
+<div class="modal-header">
+<div class="modal-title">👥 Nuevo Cliente Deudor</div>
+<button class="modal-close" onclick="cerrarModal('modal-cliente')">×</button>
+</div>
+<form onsubmit="guardarCliente(event)">
+<div class="form-group">
+<label class="form-label">Nombre del Cliente / Negocio</label>
+<input class="form-input" id="cli-nombre" placeholder="Ej: Almacén Don Juan" required="" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label">Monto de la Deuda ($)</label>
+<input class="form-input" id="cli-monto" min="1" placeholder="Ej: 50000" required="" step="any" type="number"/>
+</div>
+<div class="form-group">
+<label class="form-label">Teléfono WhatsApp (Opcional - con cód área)</label>
+<input class="form-input" id="cli-tel" placeholder="Ej: 5491122334455" type="tel"/>
+</div>
+<div class="form-group">
+<label class="form-label">Fecha</label>
+<input class="form-input" id="cli-fecha" required="" type="date"/>
+</div>
+<button class="btn-giant btn-giant-green" style="margin-top: 14px;" type="submit">GUARDAR CLIENTE</button>
+</form>
+</div>
+</div>
+<!-- MODAL: EDITAR CLIENTE DEUDOR -->
+<div class="modal-overlay" id="modal-editar-cliente">
+<div class="modal-sheet">
+<div class="modal-header">
+<div class="modal-title">✏️ Editar Cliente Deudor</div>
+<button class="modal-close" onclick="cerrarModal('modal-editar-cliente')">×</button>
+</div>
+<form onsubmit="guardarEdicionCliente(event)">
+<input id="edit-cli-id" type="hidden"/>
+<div class="form-group">
+<label class="form-label">Nombre del Cliente / Negocio</label>
+<input class="form-input" id="edit-cli-nombre" required="" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label">Monto Original ($)</label>
+<input class="form-input" id="edit-cli-monto-orig" min="0" required="" step="any" type="number"/>
+</div>
+<div class="form-group">
+<label class="form-label">Monto Actual Restante ($)</label>
+<input class="form-input" id="edit-cli-monto-act" min="0" required="" step="any" type="number"/>
+</div>
+<div class="form-group">
+<label class="form-label">Teléfono WhatsApp</label>
+<input class="form-input" id="edit-cli-tel" type="tel"/>
+</div>
+<div class="form-group">
+<label class="form-label">Fecha</label>
+<input class="form-input" id="edit-cli-fecha" required="" type="date"/>
+</div>
+<button class="btn-giant btn-giant-blue" style="margin-top: 14px;" type="submit">GUARDAR CAMBIOS</button>
+</form>
+</div>
+</div>
+<!-- MODAL: COBRAR A CLIENTE (PARCIAL) -->
+<div class="modal-overlay" id="modal-cobro-cliente">
+<div class="modal-sheet">
+<div class="modal-header">
+<div class="modal-title" id="cobro-cli-titulo">Cobrar a Cliente</div>
+<button class="modal-close" onclick="cerrarModal('modal-cobro-cliente')">×</button>
+</div>
+<form onsubmit="confirmarCobroCliente(event)">
+<input id="cobro-cli-id" type="hidden"/>
+<div class="form-group">
+<label class="form-label">¿Cuánto Pagó? ($)</label>
+<input class="form-input" id="cobro-cli-monto" min="1" required="" step="any" type="number"/>
+</div>
+<div class="form-group">
+<label class="form-label">A DÓNDE VA (Caja):</label>
+<select class="form-select" id="cobro-cli-destino" required="">
+<option value="efectivo">💵 Efectivo</option>
+<option value="transferencia">🏦 Transferencia</option>
+</select>
+</div>
+<button class="btn-giant btn-giant-green" style="margin-top: 14px;" type="submit">REGISTRAR COBRO</button>
+</form>
+</div>
+</div>
+<!-- MODAL: COMPROBANTE WHATSAPP -->
+<div class="modal-overlay" id="modal-comprobante">
+<div class="modal-sheet">
+<div class="modal-header">
+<div class="modal-title">🧾 Comprobante de Cobro</div>
+<button class="modal-close" onclick="cerrarModal('modal-comprobante')">×</button>
+</div>
+<div class="receipt-preview" id="receipt-box"></div>
+<button class="btn-giant btn-giant-green" id="btn-send-whatsapp" style="background: #25d366; color: #000; font-weight: 900;">
         📲 ENVIAR COMPROBANTE POR WHATSAPP
       </button>
-    </div>
-  </div>
-
 </div>
-
+</div>
+</div>
 <!-- SCRIPT LOGIC -->
 <script>
   /* ==========================================================================
-     SERVICE WORKER (PWA + OFFLINE)
+     1. PREVENCIÓN ACTIVA DE PULL-TO-REFRESH EN MÓVILES (TOUCH GESTURES)
+     ========================================================================== */
+  let touchStartY = 0;
+  window.addEventListener('touchstart', (e) => {
+    if (e.touches.length === 1) {
+      touchStartY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchmove', (e) => {
+    if (e.touches.length === 1) {
+      const touchY = e.touches[0].clientY;
+      const touchDiff = touchY - touchStartY;
+      const scrollable = e.target.closest('#main-scroll, .modal-sheet, .filter-pills');
+      
+      if (!scrollable) {
+        // Fuera de contenedores con scroll, prevenir siempre deslizamientos verticales extraños
+        if (e.cancelable) e.preventDefault();
+      } else {
+        // Si está en la parte más superior y desliza hacia abajo -> bloquear para evitar pull-to-refresh
+        if (scrollable.scrollTop <= 0 && touchDiff > 0) {
+          if (e.cancelable) e.preventDefault();
+        }
+      }
+    }
+  }, { passive: false });
+
+  /* ==========================================================================
+     2. PWA: SERVICE WORKER ROBUSTO OFFLINE (Blob URL)
      ========================================================================== */
   if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./sw.js').catch(err => console.log('SW no registrado', err));
-    });
+    const swCode = `
+      const CACHE_NAME = 'gp-preventa-v4';
+      const CORE_ASSETS = [
+        'https://cdn.jsdelivr.net/npm/chart.js'
+      ];
+
+      self.addEventListener('install', (event) => {
+        self.skipWaiting();
+        event.waitUntil(
+          caches.open(CACHE_NAME).then((cache) => {
+            return cache.addAll(CORE_ASSETS).catch(err => {
+              console.warn('Pre-cache asset warning:', err);
+            });
+          })
+        );
+      });
+
+      self.addEventListener('activate', (event) => {
+        event.waitUntil(
+          caches.keys().then((keys) => {
+            return Promise.all(
+              keys.map((key) => {
+                if (key !== CACHE_NAME) return caches.delete(key);
+              })
+            );
+          }).then(() => self.clients.claim())
+        );
+      });
+
+      self.addEventListener('fetch', (event) => {
+        // Para APIs externas como Overpass o WhatsApp, bypass cache directo
+        if (event.request.url.includes('overpass-api') || event.request.url.includes('wa.me')) {
+          return;
+        }
+
+        event.respondWith(
+          fetch(event.request)
+            .then((networkResponse) => {
+              if (networkResponse && networkResponse.status === 200) {
+                const responseToCache = networkResponse.clone();
+                caches.open(CACHE_NAME).then((cache) => {
+                  cache.put(event.request, responseToCache);
+                });
+              }
+              return networkResponse;
+            })
+            .catch(() => {
+              return caches.match(event.request).then((cachedResponse) => {
+                if (cachedResponse) return cachedResponse;
+                // Si es navegación a la app, fallback al cache
+                if (event.request.mode === 'navigate') {
+                  return caches.match('./') || caches.match('');
+                }
+              });
+            })
+        );
+      });
+    `;
+    const blob = new Blob([swCode], { type: 'application/javascript' });
+    const swUrl = URL.createObjectURL(blob);
+    navigator.serviceWorker.register(swUrl)
+      .then(reg => console.log('ServiceWorker GP Preventa activo', reg))
+      .catch(err => console.log('SW no registrado', err));
   }
+
+  /* ==========================================================================
+     PWA BEFOREINSTALLPROMPT & BANNER DE INSTALACIÓN
+     ========================================================================== */
+  let deferredPrompt = null;
+  const pwaBanner = document.getElementById('pwa-install-banner');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    if (pwaBanner && !sessionStorage.getItem('pwa_banner_dismissed')) {
+      pwaBanner.classList.add('visible');
+    }
+  });
+
+  function instalarPWA() {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          showToast('¡Instalando GP Preventa! 🎉');
+        }
+        deferredPrompt = null;
+        cerrarBannerPWA();
+      });
+    } else {
+      showToast('Para instalar: Menú de tu navegador ➔ "Agregar a pantalla de inicio"');
+    }
+  }
+
+  function cerrarBannerPWA() {
+    if (pwaBanner) {
+      pwaBanner.classList.remove('visible');
+      sessionStorage.setItem('pwa_banner_dismissed', 'true');
+    }
+  }
+
+  window.addEventListener('appinstalled', () => {
+    cerrarBannerPWA();
+    showToast('GP Preventa se instaló correctamente ✅');
+  });
 
   /* ==========================================================================
      ESTADO GLOBAL Y LOCALSTORAGE (CLAVE UNIFICADA gp_control_total_v3)
@@ -905,7 +1261,7 @@
     const today = new Date().toISOString().split('T')[0];
     ['ing-fecha', 'gasto-fecha', 'deuda-fecha', 'cli-fecha'].forEach(id => {
       const el = document.getElementById(id);
-      if (el) el.value = today;
+      if (el && !el.value) el.value = today;
     });
   }
 
@@ -1019,7 +1375,7 @@
       (pos) => {
         const lat = pos.coords.latitude;
         const lon = pos.coords.longitude;
-        statusEl.innerHTML = `Estás en: ${lat.toFixed(5)}, ${lon.toFixed(5)} - Buscando solo negocios que compran...`;
+        statusEl.innerHTML = `Estás en: ${lat.toFixed(5)}, ${lon.toFixed(5)} - Buscando negocios...`;
         consultarOverpass(lat, lon);
       },
       (err) => {
@@ -1085,7 +1441,6 @@ out center 80;`;
         });
       });
 
-      // Ordenar de más cercano a más lejano
       procesados.sort((a, b) => a.distancia - b.distancia);
 
       listaNegociosOriginal = procesados;
@@ -1119,7 +1474,6 @@ out center 80;`;
       lista = [...listaNegociosOriginal];
     }
 
-    // Stats
     const total = lista.length;
     const visitadosCount = lista.filter(n => visitados.includes(n.id)).length;
     const restanCount = Math.max(0, total - visitadosCount);
@@ -1128,7 +1482,6 @@ out center 80;`;
     document.getElementById('stat-visitados').textContent = visitadosCount;
     document.getElementById('stat-restan').textContent = restanCount;
 
-    // Filtros
     if (filtroActual === 'pendientes') {
       lista = lista.filter(n => !visitados.includes(n.id));
     } else if (filtroActual === 'visitados') {
@@ -1178,17 +1531,13 @@ out center 80;`;
   }
 
   /* ==========================================================================
-     MÓDULO 2: CAJA Y CONTROL DE PLATA
+     MÓDULO 2: CAJA Y CONTROL DE PLATA (EDICIÓN Y ELIMINACIÓN)
      ========================================================================== */
   function actualizarVistas() {
-    // 1. Totales de caja
     const efec = Number(appState.caja.efectivo || 0);
     const trans = Number(appState.caja.transferencia || 0);
     
-    // Suma clientes (Me Deben)
     const meDeben = appState.clientes.reduce((acc, c) => acc + Number(c.montoActual || 0), 0);
-
-    // Suma mis deudas (Yo Debo)
     const yoDebo = appState.misDeudas.reduce((acc, d) => acc + Number(d.montoActual || 0), 0);
 
     const disponible = efec + trans;
@@ -1203,23 +1552,55 @@ out center 80;`;
     document.getElementById('caja-real-neto').textContent = formatMoney(realNeto);
 
     document.getElementById('clientes-total-deuda').textContent = formatMoney(meDeben);
+    document.getElementById('cant-mis-deudas').textContent = `${appState.misDeudas.length} activas`;
 
-    // Render Mis Deudas
     renderMisDeudas();
-
-    // Render Clientes
     renderClientes();
-
-    // Render Historial
     renderHistorial();
 
-    // Actualizar Charts si están en tab caja
     if (activeTab === 'caja') {
       renderCharts();
     }
   }
 
-  // Modales Caja
+  // Ajuste rápido de saldos base
+  function abrirModalAjustarSaldos(focusField) {
+    document.getElementById('ajuste-efectivo').value = Number(appState.caja.efectivo || 0);
+    document.getElementById('ajuste-transferencia').value = Number(appState.caja.transferencia || 0);
+    document.getElementById('modal-ajustar-saldos').classList.add('active');
+    if (focusField === 'transferencia') {
+      setTimeout(() => document.getElementById('ajuste-transferencia').select(), 100);
+    } else {
+      setTimeout(() => document.getElementById('ajuste-efectivo').select(), 100);
+    }
+  }
+
+  function guardarAjusteSaldos(e) {
+    e.preventDefault();
+    const ef = parseFloat(document.getElementById('ajuste-efectivo').value) || 0;
+    const tr = parseFloat(document.getElementById('ajuste-transferencia').value) || 0;
+    
+    const efAnt = Number(appState.caja.efectivo || 0);
+    const trAnt = Number(appState.caja.transferencia || 0);
+
+    appState.caja.efectivo = ef;
+    appState.caja.transferencia = tr;
+
+    appState.historial.unshift({
+      id: Date.now().toString(),
+      tipo: 'ajuste',
+      monto: Math.abs((ef + tr) - (efAnt + trAnt)),
+      origen: 'efectivo',
+      desc: `Ajuste manual de saldos (Ef: ${formatMoney(ef)}, Tr: ${formatMoney(tr)})`,
+      fechaHora: new Date().toISOString()
+    });
+
+    guardarEstado();
+    cerrarModal('modal-ajustar-saldos');
+    showToast('Saldos de caja actualizados con éxito ✅');
+  }
+
+  // Modales Ingreso / Gasto
   function abrirModalIngreso() {
     resetDates();
     document.getElementById('modal-ingreso').classList.add('active');
@@ -1256,7 +1637,7 @@ out center 80;`;
       monto: monto,
       origen: origen,
       desc: desc,
-      fechaHora: new Date().toISOString()
+      fechaHora: new Date(fecha ? fecha + 'T12:00:00' : Date.now()).toISOString()
     });
 
     guardarEstado();
@@ -1288,7 +1669,7 @@ out center 80;`;
       monto: monto,
       origen: origen,
       desc: desc,
-      fechaHora: new Date().toISOString()
+      fechaHora: new Date(fecha ? fecha + 'T12:00:00' : Date.now()).toISOString()
     });
 
     guardarEstado();
@@ -1297,7 +1678,7 @@ out center 80;`;
     showToast(`Gasto de ${formatMoney(monto)} registrado en ${origen.toUpperCase()}`);
   }
 
-  // C) YO DEBO
+  // YO DEBO: Crear, Editar, Eliminar y Pagar
   function guardarMiDeuda(e) {
     e.preventDefault();
     const nombre = document.getElementById('deuda-nombre').value.trim();
@@ -1322,6 +1703,45 @@ out center 80;`;
     showToast(`Deuda con ${nombre} registrada`);
   }
 
+  function abrirModalEditarMiDeuda(id) {
+    const deuda = appState.misDeudas.find(d => d.id === id);
+    if (!deuda) return;
+    document.getElementById('edit-deuda-id').value = deuda.id;
+    document.getElementById('edit-deuda-nombre').value = deuda.nombre;
+    document.getElementById('edit-deuda-monto-orig').value = deuda.montoOriginal;
+    document.getElementById('edit-deuda-monto-act').value = deuda.montoActual;
+    document.getElementById('edit-deuda-desc').value = deuda.desc || '';
+    document.getElementById('edit-deuda-fecha').value = deuda.fecha || new Date().toISOString().split('T')[0];
+    document.getElementById('modal-editar-mi-deuda').classList.add('active');
+  }
+
+  function guardarEdicionMiDeuda(e) {
+    e.preventDefault();
+    const id = document.getElementById('edit-deuda-id').value;
+    const deuda = appState.misDeudas.find(d => d.id === id);
+    if (!deuda) return;
+
+    deuda.nombre = document.getElementById('edit-deuda-nombre').value.trim();
+    deuda.montoOriginal = parseFloat(document.getElementById('edit-deuda-monto-orig').value) || 0;
+    deuda.montoActual = parseFloat(document.getElementById('edit-deuda-monto-act').value) || 0;
+    deuda.desc = document.getElementById('edit-deuda-desc').value.trim();
+    deuda.fecha = document.getElementById('edit-deuda-fecha').value;
+
+    guardarEstado();
+    cerrarModal('modal-editar-mi-deuda');
+    showToast('Deuda actualizada correctamente ✅');
+  }
+
+  function eliminarMiDeuda(id) {
+    const deuda = appState.misDeudas.find(d => d.id === id);
+    if (!deuda) return;
+    if (confirm(`¿Estás seguro de eliminar la deuda con "${deuda.nombre}" por ${formatMoney(deuda.montoActual)}?`)) {
+      appState.misDeudas = appState.misDeudas.filter(d => d.id !== id);
+      guardarEstado();
+      showToast('Deuda eliminada 🗑️');
+    }
+  }
+
   function renderMisDeudas() {
     const cont = document.getElementById('lista-mis-deudas');
     if (appState.misDeudas.length === 0) {
@@ -1331,13 +1751,22 @@ out center 80;`;
 
     cont.innerHTML = appState.misDeudas.map(d => `
       <div class="card card-debt-mine">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
-          <strong style="color:#fff; font-size:1rem;">${d.nombre}</strong>
-          <span style="color:#f87171; font-weight:900; font-size:1.05rem;">Debo ${formatMoney(d.montoActual)}</span>
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:4px;">
+          <div>
+            <strong style="color:#fff; font-size:1rem; display:block;">${d.nombre}</strong>
+            <span style="font-size:0.75rem; color:#94a3b8;">${d.fecha} • ${d.desc || 'Sin detalle'}</span>
+          </div>
+          <div style="text-align:right;">
+            <span style="color:#f87171; font-weight:900; font-size:1.05rem; display:block;">Debo ${formatMoney(d.montoActual)}</span>
+            <span style="font-size:0.7rem; color:#94a3b8;">Orig: ${formatMoney(d.montoOriginal)}</span>
+          </div>
         </div>
-        <div style="font-size:0.75rem; color:#94a3b8; margin-bottom:8px;">
-          Total original: ${formatMoney(d.montoOriginal)} • ${d.desc || 'Sin detalle'} • ${d.fecha}
+
+        <div style="display:flex; justify-content:flex-end; gap:6px; margin: 8px 0;">
+          <button class="btn-sm btn-sm-edit" onclick="abrirModalEditarMiDeuda('${d.id}')">✏️ Editar</button>
+          <button class="btn-sm btn-sm-delete" onclick="eliminarMiDeuda('${d.id}')">🗑️ Eliminar</button>
         </div>
+
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:6px;">
           <button class="btn-action btn-giant-blue" onclick="abrirModalCuota('${d.id}')">
             💵 PAGAR CUOTA
@@ -1374,7 +1803,6 @@ out center 80;`;
       return;
     }
 
-    // Descontar de caja
     const saldo = Number(appState.caja[origen]) || 0;
     if (saldo < monto) {
       if (!confirm(`Saldo insuficiente en ${origen.toUpperCase()} (${formatMoney(saldo)}). ¿Continuar?`)) return;
@@ -1385,7 +1813,6 @@ out center 80;`;
     const quedaPorPagar = deuda.montoActual;
     const saldoEnCaja = appState.caja[origen];
 
-    // Registrar historial
     appState.historial.unshift({
       id: Date.now().toString(),
       tipo: 'pago_deuda',
@@ -1435,7 +1862,7 @@ out center 80;`;
     alert(`✅ Deuda con ${deuda.nombre} cancelada totalmente (${formatMoney(monto)} desde ${org}).`);
   }
 
-  // Historial
+  // HISTORIAL: EDICIÓN Y ELIMINACIÓN CON REVERSIÓN DE CAJA
   function renderHistorial() {
     const cont = document.getElementById('lista-historial');
     if (appState.historial.length === 0) {
@@ -1443,35 +1870,114 @@ out center 80;`;
       return;
     }
 
-    cont.innerHTML = appState.historial.slice(0, 30).map(h => {
+    cont.innerHTML = appState.historial.slice(0, 40).map(h => {
       const fecha = new Date(h.fechaHora).toLocaleString('es-AR', { dateStyle: 'short', timeStyle: 'short' });
       const esPositivo = ['ingreso', 'cobro_cliente'].includes(h.tipo);
       return `
         <div class="history-item">
-          <div>
-            <div style="font-weight: 700; font-size: 0.85rem; color: #fff;">${h.desc}</div>
-            <div style="font-size: 0.7rem; color: #94a3b8;">${fecha} • ${h.origen ? h.origen.toUpperCase() : ''}</div>
+          <div class="history-info">
+            <div style="font-weight: 700; font-size: 0.85rem; color: #fff; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">
+              ${h.desc}
+            </div>
+            <div style="font-size: 0.7rem; color: #94a3b8;">
+              ${fecha} • <span style="text-transform:uppercase;">${h.origen || 'Caja'}</span> • <span style="text-transform:uppercase;">${h.tipo}</span>
+            </div>
           </div>
-          <div style="font-weight: 900; font-size: 0.95rem; color: ${esPositivo ? '#4ade80' : '#f87171'};">
-            ${esPositivo ? '+' : '-'}${formatMoney(h.monto)}
+          <div style="text-align:right;">
+            <div style="font-weight: 900; font-size: 0.95rem; color: ${esPositivo ? '#4ade80' : '#f87171'};">
+              ${esPositivo ? '+' : '-'}${formatMoney(h.monto)}
+            </div>
+            <div class="history-actions" style="margin-top:4px; justify-content:flex-end;">
+              <button class="btn-sm btn-sm-edit" onclick="abrirModalEditarMovimiento('${h.id}')" title="Editar">✏️</button>
+              <button class="btn-sm btn-sm-delete" onclick="eliminarMovimiento('${h.id}')" title="Eliminar y revertir saldo">🗑️</button>
+            </div>
           </div>
         </div>
       `;
     }).join('');
   }
 
-  // E) GRÁFICOS CHART.JS
+  function abrirModalEditarMovimiento(id) {
+    const mov = appState.historial.find(h => h.id === id);
+    if (!mov) return;
+
+    document.getElementById('edit-mov-id').value = mov.id;
+    document.getElementById('edit-mov-tipo').value = mov.tipo;
+    document.getElementById('edit-mov-desc').value = mov.desc;
+    document.getElementById('edit-mov-monto').value = mov.monto;
+    document.getElementById('edit-mov-origen').value = mov.origen || 'efectivo';
+
+    document.getElementById('modal-editar-movimiento').classList.add('active');
+  }
+
+  function revertirImpactoCaja(mov) {
+    const org = mov.origen || 'efectivo';
+    const monto = Number(mov.monto) || 0;
+    if (mov.tipo === 'ingreso' || mov.tipo === 'cobro_cliente') {
+      appState.caja[org] = (Number(appState.caja[org]) || 0) - monto;
+    } else if (mov.tipo === 'gasto' || mov.tipo === 'pago_deuda') {
+      appState.caja[org] = (Number(appState.caja[org]) || 0) + monto;
+    }
+  }
+
+  function aplicarImpactoCaja(tipo, org, monto) {
+    if (tipo === 'ingreso' || tipo === 'cobro_cliente') {
+      appState.caja[org] = (Number(appState.caja[org]) || 0) + monto;
+    } else if (tipo === 'gasto' || tipo === 'pago_deuda') {
+      appState.caja[org] = (Number(appState.caja[org]) || 0) - monto;
+    }
+  }
+
+  function guardarEdicionMovimiento(e) {
+    e.preventDefault();
+    const id = document.getElementById('edit-mov-id').value;
+    const mov = appState.historial.find(h => h.id === id);
+    if (!mov) return;
+
+    const nuevoDesc = document.getElementById('edit-mov-desc').value.trim();
+    const nuevoMonto = parseFloat(document.getElementById('edit-mov-monto').value);
+    const nuevoOrigen = document.getElementById('edit-mov-origen').value;
+
+    if (!nuevoMonto || nuevoMonto <= 0) return;
+
+    // 1. Revertir impacto anterior en saldos
+    revertirImpactoCaja(mov);
+
+    // 2. Actualizar datos del movimiento
+    mov.desc = nuevoDesc;
+    mov.monto = nuevoMonto;
+    mov.origen = nuevoOrigen;
+
+    // 3. Aplicar nuevo impacto
+    aplicarImpactoCaja(mov.tipo, nuevoOrigen, nuevoMonto);
+
+    guardarEstado();
+    cerrarModal('modal-editar-movimiento');
+    showToast('Movimiento y saldos actualizados ✅');
+  }
+
+  function eliminarMovimiento(id) {
+    const mov = appState.historial.find(h => h.id === id);
+    if (!mov) return;
+
+    if (confirm(`¿Eliminar movimiento "${mov.desc}" (${formatMoney(mov.monto)})? Se revertirá su efecto en los saldos de caja.`)) {
+      revertirImpactoCaja(mov);
+      appState.historial = appState.historial.filter(h => h.id !== id);
+      guardarEstado();
+      showToast('Movimiento eliminado y saldos recalculados 🗑️');
+    }
+  }
+
+  // GRÁFICOS CHART.JS
   let chartDoughnutInstance = null;
   let chartBarInstance = null;
 
   function renderCharts() {
-    if (typeof Chart === 'undefined') return; // Chart.js aún no disponible (sin conexión y sin caché)
     const efec = Number(appState.caja.efectivo || 0);
     const trans = Number(appState.caja.transferencia || 0);
     const meDeben = appState.clientes.reduce((acc, c) => acc + Number(c.montoActual || 0), 0);
     const yoDebo = appState.misDeudas.reduce((acc, d) => acc + Number(d.montoActual || 0), 0);
 
-    // Doughnut
     const ctxD = document.getElementById('chartDoughnut');
     if (ctxD) {
       if (chartDoughnutInstance) chartDoughnutInstance.destroy();
@@ -1499,7 +2005,6 @@ out center 80;`;
       });
     }
 
-    // Bar chart: últimos 7 días
     const ctxB = document.getElementById('chartBar');
     if (ctxB) {
       if (chartBarInstance) chartBarInstance.destroy();
@@ -1515,7 +2020,6 @@ out center 80;`;
         const dateStr = d.toISOString().split('T')[0];
         diasLabels.push(d.toLocaleDateString('es-AR', { weekday: 'short', day: 'numeric' }));
 
-        // Buscar movimientos de esa fecha
         appState.historial.forEach(h => {
           if (h.fechaHora && h.fechaHora.startsWith(dateStr)) {
             const m = Number(h.monto || 0);
@@ -1554,7 +2058,7 @@ out center 80;`;
   }
 
   /* ==========================================================================
-     MÓDULO 3: CLIENTES QUE ME DEBEN + COMPROBANTE WHATSAPP
+     MÓDULO 3: CLIENTES QUE ME DEBEN (EDICIÓN, ELIMINACIÓN Y COBRO)
      ========================================================================== */
   function abrirModalCliente() {
     resetDates();
@@ -1585,6 +2089,48 @@ out center 80;`;
     showToast(`Cliente ${nombre} agregado a cobranzas`);
   }
 
+  function abrirModalEditarCliente(id) {
+    const cli = appState.clientes.find(c => c.id === id);
+    if (!cli) return;
+
+    document.getElementById('edit-cli-id').value = cli.id;
+    document.getElementById('edit-cli-nombre').value = cli.nombre;
+    document.getElementById('edit-cli-monto-orig').value = cli.montoOriginal;
+    document.getElementById('edit-cli-monto-act').value = cli.montoActual;
+    document.getElementById('edit-cli-tel').value = cli.tel || '';
+    document.getElementById('edit-cli-fecha').value = cli.fecha || new Date().toISOString().split('T')[0];
+
+    document.getElementById('modal-editar-cliente').classList.add('active');
+  }
+
+  function guardarEdicionCliente(e) {
+    e.preventDefault();
+    const id = document.getElementById('edit-cli-id').value;
+    const cli = appState.clientes.find(c => c.id === id);
+    if (!cli) return;
+
+    cli.nombre = document.getElementById('edit-cli-nombre').value.trim();
+    cli.montoOriginal = parseFloat(document.getElementById('edit-cli-monto-orig').value) || 0;
+    cli.montoActual = parseFloat(document.getElementById('edit-cli-monto-act').value) || 0;
+    cli.tel = document.getElementById('edit-cli-tel').value.trim().replace(/\D/g, '');
+    cli.fecha = document.getElementById('edit-cli-fecha').value;
+
+    guardarEstado();
+    cerrarModal('modal-editar-cliente');
+    showToast('Cliente actualizado correctamente ✅');
+  }
+
+  function eliminarCliente(id) {
+    const cli = appState.clientes.find(c => c.id === id);
+    if (!cli) return;
+
+    if (confirm(`¿Estás seguro de eliminar al cliente "${cli.nombre}" con deuda de ${formatMoney(cli.montoActual)}?`)) {
+      appState.clientes = appState.clientes.filter(c => c.id !== id);
+      guardarEstado();
+      showToast('Cliente eliminado 🗑️');
+    }
+  }
+
   function renderClientes() {
     const cont = document.getElementById('lista-clientes');
     if (appState.clientes.length === 0) {
@@ -1594,13 +2140,24 @@ out center 80;`;
 
     cont.innerHTML = appState.clientes.map(cli => `
       <div class="card">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
-          <strong style="color:#fff; font-size:1.05rem;">${cli.nombre}</strong>
-          <span style="color:#facc15; font-weight:900; font-size:1.1rem;">Debe ${formatMoney(cli.montoActual)}</span>
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:4px;">
+          <div>
+            <strong style="color:#fff; font-size:1.05rem; display:block;">${cli.nombre}</strong>
+            <span style="font-size:0.75rem; color:#94a3b8;">
+              ${cli.tel ? '📞 ' + cli.tel : 'Sin teléfono'} • Alta: ${cli.fecha}
+            </span>
+          </div>
+          <div style="text-align:right;">
+            <span style="color:#facc15; font-weight:900; font-size:1.1rem; display:block;">Debe ${formatMoney(cli.montoActual)}</span>
+            <span style="font-size:0.7rem; color:#94a3b8;">Orig: ${formatMoney(cli.montoOriginal)}</span>
+          </div>
         </div>
-        <div style="font-size:0.75rem; color:#94a3b8; margin-bottom:10px;">
-          Original: ${formatMoney(cli.montoOriginal)} • ${cli.tel ? '📞 ' + cli.tel : 'Sin teléfono'} • Alta: ${cli.fecha}
+
+        <div style="display:flex; justify-content:flex-end; gap:6px; margin: 8px 0;">
+          <button class="btn-sm btn-sm-edit" onclick="abrirModalEditarCliente('${cli.id}')">✏️ Editar</button>
+          <button class="btn-sm btn-sm-delete" onclick="eliminarCliente('${cli.id}')">🗑️ Eliminar</button>
         </div>
+
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:6px;">
           <button class="btn-action btn-giant-blue" onclick="abrirModalCobroCliente('${cli.id}')">
             💵 PAGO PARCIAL
@@ -1641,10 +2198,8 @@ out center 80;`;
     cli.montoActual -= monto;
     const restante = cli.montoActual;
 
-    // Sumar a caja seleccionada
     appState.caja[destino] = (Number(appState.caja[destino]) || 0) + monto;
 
-    // Registrar historial
     appState.historial.unshift({
       id: Date.now().toString(),
       tipo: 'cobro_cliente',
@@ -1760,7 +2315,7 @@ ${estadoDeuda}`;
       }
     };
     reader.readAsText(file);
-    event.target.value = ''; // limpiar input
+    event.target.value = '';
   }
 
   // Inicializar al cargar ventana
@@ -1769,6 +2324,4 @@ ${estadoDeuda}`;
     resetDates();
   });
 </script>
-
-</body>
-</html>
+</body></html>
