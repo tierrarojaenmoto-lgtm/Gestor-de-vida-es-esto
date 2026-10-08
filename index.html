@@ -45,12 +45,11 @@
     html, body {
       background-color: var(--bg);
       color: var(--text);
-      min-height: 100vh;
+      height: 100%;
       font-size: 15px;
       overscroll-behavior-y: none;
       overscroll-behavior: none;
-      overflow-x: hidden;
-      -webkit-overflow-scrolling: touch;
+      overflow: hidden;
     }
 
     body {
@@ -61,12 +60,13 @@
     .app-container {
       width: 100%;
       max-width: 480px;
-      min-height: 100vh;
+      height: 100vh;
+      height: 100dvh;
       background-color: #0b1120;
       display: flex;
       flex-direction: column;
       position: relative;
-      padding-bottom: 78px;
+      overflow: hidden;
       box-shadow: 0 0 30px rgba(0,0,0,0.8);
       overscroll-behavior-y: none;
       overscroll-behavior: none;
@@ -185,7 +185,8 @@
     /* MAIN VIEW AREAS */
     main {
       flex: 1;
-      padding: 14px;
+      min-height: 0;
+      padding: 14px 14px 90px 14px;
       overflow-y: auto;
       overscroll-behavior-y: contain;
       overscroll-behavior: none;
@@ -1116,16 +1117,13 @@
     if (e.touches.length === 1) {
       const touchY = e.touches[0].clientY;
       const touchDiff = touchY - touchStartY;
-      const scrollable = e.target.closest('#main-scroll, .modal-sheet, .filter-pills');
+      let scrollable = e.target.closest('#main-scroll, .modal-sheet');
       
       if (!scrollable) {
-        // Fuera de contenedores con scroll, prevenir siempre deslizamientos verticales extraños
         if (e.cancelable) e.preventDefault();
-      } else {
-        // Si está en la parte más superior y desliza hacia abajo -> bloquear para evitar pull-to-refresh
-        if (scrollable.scrollTop <= 0 && touchDiff > 0) {
-          if (e.cancelable) e.preventDefault();
-        }
+      } else if (scrollable.scrollTop <= 0 && touchDiff > 0) {
+        // Arriba del todo y deslizando hacia abajo -> bloquear pull-to-refresh
+        if (e.cancelable) e.preventDefault();
       }
     }
   }, { passive: false });
